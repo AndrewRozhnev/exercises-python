@@ -39,12 +39,12 @@ theory: |
 
   Запустите его на [repl.it](https://repl.it/languages/python3) и поэкспериментируйте.
 
-  Вернемся к нашей валютной программе. Запишем стоимость доллара в рублях, как отдельную переменную. Вычислим цену 50 евро в долларах, умножив их на `1.25`. Допустим, что 1 доллар — 60 рублей:
+  Вернемся к нашей валютной программе. Запишем стоимость доллара в рублях, как отдельную переменную. Вычислим цену 50 евро в долларах, умножив их на `1.25`. Допустим, что 1 доллар — 75 рублей:
 
   ```python
-  rubles_per_dollar = 60
+  rubles_per_dollar = 75
   dollars_count = 50 * 1.25                        # 62.5
-  rubles_count = dollars_count * rubles_per_dollar  # 3750.0
+  rubles_count = dollars_count * rubles_per_dollar  # 4687.5
 
   print(rubles_count)
   ```
@@ -52,14 +52,14 @@ theory: |
   А теперь давайте добавим к выводу текст с помощью конкатенации:
 
   ```python
-  rubles_per_dollar = 60
+  rubles_per_dollar = 75
   dollars_count = 50 * 1.25                        # 62.5
-  rubles_count = dollars_count * rubles_per_dollar  # 3750.0
+  rubles_count = dollars_count * rubles_per_dollar  # 4687.5
 
   print('The price is ' + str(rubles_count) + ' rubles')
   ```
 
-  <pre class='hexlet-basics-output'>The price is 3750.0 rubles</pre>
+  <pre class='hexlet-basics-output'>The price is 4687.5 rubles</pre>
 
   Любая переменная может быть частью любого выражения. В момент вычисления вместо имени переменной подставляется её значение.
 
@@ -78,7 +78,7 @@ instructions: |
 
   Считаем, что:
   - 1 евро = 1.25 долларов
-  - 1 доллар = 60 рублей
+  - 1 доллар = 75 рублей
 
 tips:
   - |
